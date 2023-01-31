@@ -15,7 +15,6 @@ for item in data:
     name = item.find('a', class_="movieItem_title").text
     rating = item.find('span', class_="rating_num").text + '⭐️'
 
-    # films.append(f'{name} {rating}')
     print(f'{name} {rating}')
 
     counter += 1
